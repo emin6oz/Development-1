@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: grey;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background-color: grey;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s; 
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    text-align: center;
+    color: aliceblue;
+}
+
+.text {
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    color: aliceblue;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+
+.contact-form-container {
+    background-color: rgb(57, 57, 57);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #616161;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #404040;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
